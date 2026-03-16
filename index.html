@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>昆明洲际商务咨询 - 欧美代理清关专家</title>
+    <!-- 引入 Tailwind CSS 进行页面样式布局 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 FontAwesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a', // 深蓝色，稳重商务风格
+                        secondary: '#ea580c', // 橙色，突出重点和联系方式
+                        lightbg: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 平滑滚动 */
+        html { scroll-behavior: smooth; }
+        /* 隐藏滚动条但保留功能 */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="bg-lightbg text-gray-800 font-sans antialiased pb-20">
+
+    <!-- 导航栏 -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-earth-americas text-primary text-3xl"></i>
+                <h1 class="text-2xl font-bold text-primary tracking-wide">昆明洲际商务咨询</h1>
+            </div>
+            <div class="hidden lg:flex items-center gap-6 font-medium text-gray-600">
+                <a href="#services" class="hover:text-primary transition">主营业务</a>
+                <a href="#customs" class="hover:text-primary transition">欧美清关</a>
+                <a href="#fda" class="hover:text-primary transition">FDA专栏</a>
+                <a href="#cert" class="hover:text-primary transition">特殊认证</a>
+                <a href="tel:1521702933" class="bg-secondary text-white px-5 py-2 rounded-full hover:bg-orange-700 transition shadow-lg flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> 联系陈小姐
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄首屏 (Hero Section) -->
+    <section class="mt-20 relative bg-primary text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div class="container mx-auto px-4 py-20 md:py-32 relative z-10 flex flex-col items-center text-center">
+            <span class="bg-white/20 text-blue-100 py-1 px-4 rounded-full text-sm font-semibold tracking-wider mb-6 border border-white/30 backdrop-blur-sm">专业跨境物流与清关服务商</span>
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                美国加拿大德国欧洲 <span class="text-secondary">代理清关</span>
+            </h2>
+            <p class="text-lg md:text-xl text-blue-100 max-w-3xl mb-10 leading-relaxed">
+                专注处理 DHL、UPS、FedEx 扣关难题。精通 FDA清关 (DEV/DFE/LST/510K/DII)、眼镜、美容仪器、医疗器械等复杂货物双清到门。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#services" class="bg-white text-primary font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                    了解我们的服务
+                </a>
+                <a href="tel:1521702933" class="bg-secondary text-white font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-orange-700 transition duration-300 flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-weixin text-xl"></i> 免费咨询陈小姐
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. 经营范围 (Business Scope) -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">全面经营范围</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto rounded"></div>
+                <p class="mt-4 text-gray-500 max-w-2xl mx-auto">为您提供全方位、多渠道的国际物流运输服务，满足各类货物的跨境需求。</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 国际快递 -->
+                <div class="bg-lightbg rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 text-primary rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">国际快递</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        专业代理 <strong>DHL、UPS</strong> 国际快递服务。提供高效、快捷的亚马逊 <strong>FBA头程运输</strong>，确保货物安全入仓。
+                    </p>
+                </div>
+                
+                <!-- 国际空运 -->
+                <div class="bg-lightbg rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 text-primary rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-plane-departure"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">国际空运</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        美国、加拿大、欧盟27国、日本、澳大利亚空运双清到门。<br><span class="text-secondary font-semibold">★ 超大件均可接</span>
+                    </p>
+                </div>
+
+                <!-- 国际海运 -->
+                <div class="bg-lightbg rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 text-primary rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-ship"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">国际海运</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        美国、加拿大、欧盟27国、日本、澳大利亚海运双清到门。<br><span class="text-secondary font-semibold">★ 超大件均可接</span>
+                    </p>
+                </div>
+
+                <!-- 国际小包 -->
+                <div class="bg-lightbg rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 text-primary rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">国际小包</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        可发欧美加英27国。支持：各类电池、储能电源、一二线品牌衣服/鞋包/手表/眼镜、电子烟、干货食品、月饼、茶叶、零食小吃等。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 特色服务 (Special Services) -->
+    <section class="py-12 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="md:w-1/3">
+                    <h2 class="text-3xl font-bold mb-4 text-secondary">特色优势服务</h2>
+                    <p class="text-gray-300">专门解决复杂货物的跨境清关难题，为您的特殊商品保驾护航。</p>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-gray-800 p-5 rounded-lg border-l-4 border-secondary flex items-start gap-4">
+                        <i class="fa-solid fa-bolt text-yellow-400 text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">特殊货物处理</h4>
+                            <p class="text-gray-400 text-sm">擅长处理各类带电、带磁、纯电、蓝牙认证类货物。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-5 rounded-lg border-l-4 border-secondary flex items-start gap-4">
+                        <i class="fa-solid fa-file-medical text-green-400 text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">合规双清到门</h4>
+                            <p class="text-gray-400 text-sm">FCC / FDA认证及医疗认证类货件，欧美都可提供双清门到门服务。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center bg-gray-800 p-4 rounded-lg font-bold text-lg border border-gray-700">
+                <i class="fa-solid fa-lock-open text-secondary mr-2"></i>
+                <span class="text-white">专门解决：美国、加拿大 <span class="text-secondary">扣关货件清关服务</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 欧美代清关业务 (Customs Clearance) -->
+    <section id="customs" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">美国 加拿大 德国 欧洲 代清关业务</h2>
+            <div class="w-20 h-1 bg-secondary mx-auto rounded mb-12"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <!-- 本土清关 -->
+                <div class="p-8 bg-blue-50 rounded-2xl">
+                    <div class="text-primary mb-4"><i class="fa-solid fa-building-flag text-4xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3">本土清关解决扣关</h3>
+                    <p class="text-gray-600 mb-4">美国、加拿大、德国、日本<strong class="text-gray-800">本土清关公司</strong>，专业解决货物扣关、清关协助放行问题。</p>
+                </div>
+
+                <!-- 国际快递扣关代理 -->
+                <div class="p-8 bg-blue-50 rounded-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 text-secondary/10"><i class="fa-brands fa-ups text-6xl"></i></div>
+                    <div class="text-primary mb-4"><i class="fa-solid fa-handshake-angle text-4xl relative z-10"></i></div>
+                    <h3 class="text-xl font-bold mb-3 relative z-10">快递扣关代理清关</h3>
+                    <ul class="text-gray-600 space-y-2 relative z-10">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>DHL、UPS、FedEx海关扣关代理</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>认证问题/低申报处理</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>缺少进口商清关/缺少5106表格均可处理</li>
+                    </ul>
+                </div>
+
+                <!-- 税号与地址协助 -->
+                <div class="p-8 bg-blue-50 rounded-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 text-secondary/10"><i class="fa-brands fa-amazon text-6xl"></i></div>
+                    <div class="text-primary mb-4"><i class="fa-solid fa-address-card text-4xl relative z-10"></i></div>
+                    <h3 class="text-xl font-bold mb-3 relative z-10">税号及地址协助放行</h3>
+                    <ul class="text-gray-600 space-y-2 relative z-10">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>协助提供进口商信息/税号</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>支持TAX ID / EIN / SSN / NAT / EORI / NRI</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>亚马逊/私人地址/海外仓/AGL扣关短时间内快速放行</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FDA清关服务 (FDA Clearance) -->
+    <section id="fda" class="py-16 bg-lightbg border-y border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-start gap-12">
+                
+                <div class="lg:w-1/3">
+                    <div class="sticky top-28">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">强势 FDA 清关服务</h2>
+                        <div class="w-16 h-1 bg-secondary rounded mb-6"></div>
+                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                            所有FDA管制类产品，在<strong class="text-gray-900">美国被扣关均可代清关</strong>。不限品名，提供一二类医疗器械清关解决方案。
+                        </p>
+                        <div class="bg-primary text-white p-6 rounded-xl shadow-lg">
+                            <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-user-tie mr-2"></i>自有美国FDA代理人</h3>
+                            <p class="text-blue-100 text-sm mb-4">我们在美国拥有自己的FDA代理人，能够高效、直接地协助客户提供清关所需的全套资料，确保顺利放行。</p>
+                            <a href="tel:1521702933" class="inline-block bg-white text-primary font-bold px-4 py-2 rounded-lg text-sm hover:bg-gray-100 transition">
+                                立即咨询 FDA 清关方案
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-2/3">
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-8">
+                        <h3 class="text-2xl font-bold text-primary border-b border-gray-100 pb-4 mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-stethoscope text-secondary"></i> 一二类医疗器械/相关产品
+                        </h3>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200">眼镜</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200">美容仪器</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200">医疗设备</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200">按摩仪 / 按摩椅</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200">电动/手动牙刷</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200">牙线 / 冲牙器</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200">牙齿美白灯</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200">口罩</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200">电动轮椅 / 老年代步车</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200">B超机</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200">胎心仪</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm border border-gray-200 border-dashed">等等...</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">提供以上产品在美国需要用到的 FDA 认证及清关信息协助。</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
+                        <h3 class="text-2xl font-bold text-primary border-b border-gray-100 pb-4 mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-file-contract text-secondary"></i> FDA 清关协助提供资料
+                        </h3>
+                        <ul class="space-y-4 text-gray-700 font-mono text-sm bg-gray-50 p-6 rounded-lg border border-gray-100">
+                            <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-3 text-base"></i><span>Manufacturer’s name and complete address</span></li>
+                            <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-3 text-base"></i><span>Device Foreign Manufactures Registration Number <strong class="text-primary">(DEV)</strong></span></li>
+                            <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-3 text-base"></i><span>Device Foreign Exporter Registration Number <strong class="text-primary">(DFE)</strong></span></li>
+                            <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-3 text-base"></i><span>Device Initial importer Registration Number <strong class="text-primary">(DII#)</strong></span></li>
+                            <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-3 text-base"></i><span>Device Listing Number <strong class="text-primary">(LST)</strong></span></li>
+                            <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-3 text-base"></i><span>Device Initial importer <strong class="text-primary">(DII)</strong></span></li>
+                            <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-3 text-base"></i><span>Premarket Submission Number <strong class="text-primary">(510K)</strong></span></li>
+                        </ul>
+                        <div class="mt-6 pt-6 border-t border-gray-100">
+                            <h4 class="font-bold text-gray-800 mb-3"><i class="fa-solid fa-glasses text-secondary mr-2"></i> 眼镜类产品专项补充：</h4>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <div class="bg-blue-50 text-blue-800 px-4 py-3 rounded-lg flex-1 text-sm border border-blue-100">
+                                    <i class="fa-solid fa-circle-dot mr-2"></i><strong>Drop ball test</strong> (落球测试)
+                                </div>
+                                <div class="bg-blue-50 text-blue-800 px-4 py-3 rounded-lg flex-1 text-sm border border-blue-100">
+                                    <i class="fa-solid fa-shield mr-2"></i><strong>Impact Resistance Test form</strong> (抗冲击测试表)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5/6/7 特殊认证清关 (Special Certifications) -->
+    <section id="cert" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">各类特殊认证清关服务</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 蓝牙清关 -->
+                <div class="border border-gray-200 p-8 rounded-2xl hover:border-primary transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-3xl mb-6">
+                        <i class="fa-brands fa-bluetooth-b"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">蓝牙产品清关</h3>
+                    <p class="text-gray-600 text-sm">
+                        专门解决蓝牙产品出口美国的清关问题。可以协助客户提供产品到美国需要用到的<strong class="text-gray-900">蓝牙授权</strong>。
+                    </p>
+                </div>
+
+                <!-- 木制品/笔类清关 -->
+                <div class="border border-gray-200 p-8 rounded-2xl hover:border-green-600 transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-green-50 text-green-600 rounded-full flex items-center justify-center text-3xl mb-6">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">木制品、笔类清关</h3>
+                    <p class="text-gray-600 text-sm">
+                        精通木制产品、文具笔类等产品的环保合规清关。提供并协助办理 <strong class="text-gray-900">TSCA</strong> 和 <strong class="text-gray-900">LACEY (雷斯法案)</strong> 认证。
+                    </p>
+                </div>
+
+                <!-- DOT认证 -->
+                <div class="border border-gray-200 p-8 rounded-2xl hover:border-red-600 transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-red-50 text-red-600 rounded-full flex items-center justify-center text-3xl mb-6">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">汽摩配件 DOT 认证</h3>
+                    <p class="text-gray-600 text-sm">
+                        汽车车灯、摩托车车灯等交通器材出口美国清关必备。我们提供专业的美国清关要用的 <strong class="text-gray-900">DOT认证</strong> 协助办理及放行服务。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚与固定联系方式 -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between border-b border-gray-800 pb-8 mb-8 gap-6">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-earth-americas text-secondary text-4xl"></i>
+                    <div>
+                        <h2 class="text-2xl font-bold text-white tracking-wide">昆明洲际商务咨询</h2>
+                        <p class="text-sm mt-1">您的全球物流与专业清关护航者</p>
+                    </div>
+                </div>
+                <div class="text-center md:text-right bg-gray-800 p-5 rounded-xl border border-gray-700">
+                    <p class="text-sm text-gray-400 mb-2">欧美清关联系人 / 咨询顾问</p>
+                    <p class="text-2xl font-bold text-white mb-1"><i class="fa-solid fa-user text-secondary mr-2"></i>陈小姐</p>
+                    <p class="text-xl text-secondary font-mono tracking-wider"><i class="fa-solid fa-phone mr-2"></i>1521702933 <span class="text-sm text-gray-400 font-sans tracking-normal">(微信同号)</span></p>
+                </div>
+            </div>
+            <div class="text-center text-sm">
+                <p>&copy; 2024 昆明洲际商务咨询 版权所有. 提供专业的美国、加拿大、德国及欧洲各国代理清关服务。</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 移动端底部悬浮联系栏 (Mobile Sticky Footer) -->
+    <div class="fixed bottom-0 left-0 right-0 bg-secondary text-white z-50 shadow-[0_-4px_10px_rgba(0,0,0,0.15)] md:hidden">
+        <a href="tel:1521702933" class="w-full h-16 flex items-center justify-center gap-3 text-lg font-bold">
+            <i class="fa-solid fa-phone text-2xl animate-pulse"></i> 
+            <span>陈小姐: 1521702933 (微信同号)</span>
+        </a>
+    </div>
+
+</body>
+</html>
